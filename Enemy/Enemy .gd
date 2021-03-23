@@ -3,6 +3,7 @@ extends KinematicBody2D
 var motion = Vector2()
 var speed = 100
 var MAX_SPEED = 400
+var velocity = Vector2.ZERO
 
 func _ready():
 	pass # Replace with function body.
