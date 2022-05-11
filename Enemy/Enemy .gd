@@ -11,7 +11,7 @@ func _ready():
 func _physics_process(delta):
 	var Player = get_parent().get_node("Player")
 	
-	position += (Player.position - position) / 50
+	global_position += (Player.position - position) * speed * delta
 	look_at(Player.position)
 
 	move_and_collide(motion)

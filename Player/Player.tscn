@@ -1,10 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
-[ext_resource path="res://Sprites/Triangle.png" type="Texture" id=2]
+[ext_resource path="res://Sprite/Triangle.png" type="Texture" id=2]
 [ext_resource path="res://Light/Light.jpeg" type="Texture" id=3]
-
-
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -26,6 +24,9 @@ rotation = 1.5708
 position = Vector2( 0, -0.900758 )
 scale = Vector2( 1.4, 1.28232 )
 polygon = PoolVector2Array( -7.14286, 7.69231, 0, -8, 0, -8, 7.14286, 7.69231 )
+
+[node name="BulletPosition" type="Node2D" parent="."]
+position = Vector2( 16, 0 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
